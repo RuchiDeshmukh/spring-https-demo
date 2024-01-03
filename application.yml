@@ -1,0 +1,14 @@
+server:
+ ssl:
+  key-alias: spring-https
+  key-store: classpath:demo.jks
+  key-store-type: JKS
+  key-password: password
+  
+ port: 7777
+ 
+trust:
+ store : classpath:demo.jks
+ store.passoword : password
+ 
+# keytool -genkeypair -alias spring-https -storetype JKS -storepass password -keypass password -keyalg RSA -keysize 2048 -validity 365 -keystore demo.jks 
